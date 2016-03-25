@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: 'Titillium Web', Arial, Helvetica, sans-serif;	
+	font-size: 16px;
+	color: #a3a3a3;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*header*/
+
+#logo {
+	width: 70px;
+	height: 70px;
+	float: left;
+}
+.navigation{
+	height: 70px;
+}
+
+.navigation ul {
+	float: right;
+}
+
+.navigation li  {
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 28px;
+}
+
+.navigation li a:hover {
+	color: #f63c3c;
+	border-bottom:3px solid #f63c3c; 
+}
+
+nav ul a:link {
+	color: #a3a3a3;
+}
+
+nav ul a:visited {
+	color: #a3a3a3;
+}
+/*main*/
+
+.background {
+	background: #D1D1D1 url(../img/background_hero.jpg) no-repeat center;
+	text-align: center;
+}
+
+.main h1 {
+	font-family: 'Teko-Light', Arial, Helvetica, sans-serif;
+	font-size: 120px;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 20px;
+	padding-top: 230px;
+
+}
+
+.main p {
+	font-family: 'TitilliumWeb-Light', Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+
+.button {
+	display: inline-block;
+	color: black;
+	background-color: white;
+	font-family: 'Teko-Regular';
+	font-size: 20px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	padding: 20px 55px 20px 55px;
+
+}
+
+.hide {
+	visibility: hidden;
+	display: none;
+}
+
+.carousel-indicators li {
+	display: inline-block;
+	border-bottom: 4px solid #ffffff;
+	width: 40px;
+	margin: 230px 5px 40px 5px;
+}
+
+.carousel-indicators li a:hover {
+	display: inline-block;
+	border-bottom: 4px solid black;
+	width: 40px;
+	margin: 40px 5px 40px 5px;
+}
+
+/*projects*/
+.projects h2 {
+	font-family: 'Teko-Regular';
+	font-size: 40px;	
+	text-align: center;
+	color: black;
+	margin-top: 50px;
+	margin-bottom: 35px;
+}
+
+h3 {
+	font-family: 'Teko-Regular'
+	font-size: 30px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	color: black;
+	margin: 10px;
+}
+
+article p {
+	font-size: 14px;
+	text-align: center;
+	color: #555555;
+	margin: 10px;
+}
+
+.row {
+	max-width: 1920px;
+	/*background-color: black;*/
+}
+
+article {
+	display: inline-block;
+	float: center;
+	margin: 4px;
+	width: 45%;
+}
+
+article img {
+	width: 100%;
+}
+
+figcaption {
+	visibility: hidden;
+	display: none;
+}
+
+.projects {
+	text-align: center;
+}
+
+/*.projects a{
+	color: #f63c3c;
+}*/
+
+/*.projects p a{
+	display: inline-block;
+	margin-bottom: 70px;
+	border-bottom:3px solid #f63c3c;
+}*/
+
+/*siding 1*/
+.show {
+	display: block;
+	text-align: center;
+	background-color: #f63c3c;
+	color: white;
+	padding-top: 55px;
+	padding-bottom: 55px;
+}
+
+.show h2{
+	font-family: 'Teko-Light';
+	font-size: 40px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.show p{
+}

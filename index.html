@@ -3,16 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SAGA site</title>
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Teko:300,400' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:300' rel='stylesheet'>
+	<link rel="stylesheet" href="css/main.css">		
 </head>
 <body>
-	<header>
-		<img src="img/logo.svg" alt="SAGA Logo">
+	<header class="navigation">
 		<nav>
+			<div id="logo">
+				<img src="img/logo.svg" alt="SAGA Logo">
+			</div>
 			<ul>
-				<li><a href="#">Home</a></li>
+				<li class="active"><a href="#">Home</a></li>
 				<li><a href="#">Projects</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Services</a></li>
@@ -22,87 +26,93 @@
 		</nav>
 	</header>
 	<main>
-		<section>
-			<ul>
+		<section class="background">
+			<ul class="main">
 				<li>
 					<h1>We build websites and apps that people love</h1>
 					<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
 					<a href="#" class="button">Explore More</a>
 				</li>
-				<li>
+				<li class="hide">
 					<h1>We build websites and apps that people love</h1>
 					<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
 					<a href="#" class="button">Explore More</a>
 				</li>
-				<li>
+				<li class="hide">
 					<h1>We build websites and apps that people love</h1>
 					<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
 					<a href="#" class="button">Explore More</a>
 				</li>
-				<li>
+				<li class="hide">
 					<h1>We build websites and apps that people love</h1>
 					<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
 					<a href="#" class="button">Explore More</a>
 				</li>
 			</ul>
 			<nav>
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+				<ul class="carousel-indicators">
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
 				</ul>
 			</nav>
 		</section>
 		<section class="projects">
 			<h2>My Projects</h2>
-			<article>
-				<a href="#">
-					<figure>
-						<img src="img/catalog.jpg" alt="Model S Catalog">
-					</figure>
+			<div class="row">
+				<article>
+					<a href="#">
+						<figure>
+							<img src="img/catalog.jpg" alt="Model S Catalog">
+						</figure>
 						<h3>Model S Catalog</h3>
 						<p>Information materials that will help to discover all features of the serial electric car Tesla Model S</p>
-				</a>
-			</article>
-			<article>
-				<a href="#">
-					<figure>
-						<img src="ipad.jpg" alt="Discovery Channel iPad">
-					</figure>
-					<h3>Discovery Channel iPad</h3>
-					<p>The space is designed to inspire, and pique curiosity and encourage visitors to express their own creativity</p>
-				</a>
-			</article>
-			<article>
-				<a href="">
-					<figure>
-						<img src="stuhrling.jpg" alt="Stuhrling">
-						<figcaption>
-						<h4>Year 2014</h4><br>Client: Personal Project
-						<p>Digital / Mobile / Editorial</p>
-						<h5>Sage Multipurpose Theme</h5>
-						</figcaption>
-					</figure>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<figure>
+							<img src="img/ipad.jpg" alt="Discovery Channel iPad">
+						</figure>
+					
+						<h3>Discovery Channel iPad</h3>
+						<p>The space is designed to inspire, and pique curiosity and encourage visitors to express their own creativity</p>
+
+					</a>
+				</article>
+			</div>
+			<div class="row">
+				<article>
+					<a href="#">
+						<figure>
+							<img src="img/stuhrling.jpg" alt="Stuhrling">
+							<figcaption>
+							<h4>Year 2014</h4><br>Client: Personal Project
+							<p>Digital / Mobile / Editorial</p>
+							<h5>Sage Multipurpose Theme</h5>
+							</figcaption>
+						</figure>
+					</a>
 					<h3>Stuhrling</h3>
 					<p>Flexible multi-concept portfolio theme  based on WordPress. Built by designers, for designers, creative agencies and studios.</p>
-				</a>
-			</article>
-			<article>
-				<a href="#">
-					<figure>
-						<img src="spaces.jpg" alt="Infinity Spaces">
-					</figure>
+				</article>
+				<article>
+					<a href="#">
+						<figure>
+							<img src="img/spaces.jpg" alt="Infinity Spaces">
+						</figure>
+					</a>
 					<h3>Infinity Spaces</h3>
 					<p>Infinity ∞ is an abstract concept describing something without any limit and is relevant in a number of fields</p>
-				</a>
-			</article>
-			<a href="#"><p>Show more Projects</p></a>
+				</article>
+			</div>
+			<p><a href="#">Show more Projects</a></p>
 		</section>
-		<aside>
+		<aside class="show">
 			<h2>Showcasing your work has never been more fun</h2>
 			<p>Discover elegant solution for your online portfolio. Fast, reliable, affordable...</p>
-			<a href="#" target="_blank">get in touch</a>
+			<a href="#" target="_blank" class="button">get in touch</a>
 		</aside>
 		<aside>
 			<h2>Stay Connected</h2>
