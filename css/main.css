@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
+*{
+	box-sizing: border-box;
+}
+
 body {
 	font-family: 'Titillium Web', Arial, Helvetica, sans-serif;	
 	font-size: 16px;
@@ -20,6 +24,7 @@ a {
 }
 .navigation{
 	height: 70px;
+	padding: 0 19.5% 0 19.5%;
 }
 
 .navigation ul {
@@ -47,26 +52,30 @@ nav ul a:visited {
 /*main*/
 
 .background {
-	background: #D1D1D1 url(../img/background_hero.jpg) no-repeat center;
+	background: url(../img/background_hero.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	padding: 0 19.5% 0 19.5%;
+}
+
+.slide {
+	padding-top: 230px;
+	padding-bottom: 230px;
 	text-align: center;
 }
 
-.main h1 {
+.slide h1 {
 	font-family: 'Teko-Light', Arial, Helvetica, sans-serif;
 	font-size: 120px;
 	color: white;
 	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 20px;
-	padding-top: 230px;
-
 }
 
-.main p {
+.slide p {
 	font-family: 'TitilliumWeb-Light', Arial, Helvetica, sans-serif;
 	font-size: 22px;
 	color: white;
-	text-align: center;
 	padding-top: 60px;
 	padding-bottom: 50px;
 }
@@ -90,9 +99,10 @@ nav ul a:visited {
 
 .carousel-indicators li {
 	display: inline-block;
-	border-bottom: 4px solid #ffffff;
 	width: 40px;
-	margin: 230px 5px 40px 5px;
+	height: 5px;
+	background-color: white;
+	margin: 0px 5px 40px 5px;
 }
 
 .carousel-indicators li a:hover {
@@ -129,16 +139,11 @@ article p {
 	margin: 10px;
 }
 
-.row {
-	max-width: 1920px;
-	/*background-color: black;*/
-}
-
 article {
-	display: inline-block;
-	float: center;
+	float: left;
+/*	display: inline-block;*/
 	margin: 4px;
-	width: 45%;
+	width: 48.43%;
 }
 
 article img {
@@ -152,17 +157,22 @@ figcaption {
 
 .projects {
 	text-align: center;
+	clear: both;
+	overflow: hidden;
 }
 
-/*.projects a{
-	color: #f63c3c;
-}*/
-
-/*.projects p a{
+.projects p a{
 	display: inline-block;
+	font-family: 'Teko-Regular';
+	font-size: 20px;
 	margin-bottom: 70px;
+	margin-top: 60px;
 	border-bottom:3px solid #f63c3c;
-}*/
+}
+
+.projects p a:visited {
+	color: #f63c3c;
+}
 
 /*siding 1*/
 .show {
@@ -170,8 +180,7 @@ figcaption {
 	text-align: center;
 	background-color: #f63c3c;
 	color: white;
-	padding-top: 55px;
-	padding-bottom: 55px;
+	padding: 55px 19.5% 55px 19.5%;
 }
 
 .show h2{
@@ -179,7 +188,91 @@ figcaption {
 	font-size: 40px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+	margin-bottom: 10px;
 }
 
 .show p{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.show a{
+	margin-top: 10px;
+}
+
+.social {
+	padding: 0 19.5% 0 19.5%;
+	background-color: #fafafa;
+}
+
+.social h2 {
+	font-family: 'Teko-Regular';
+	font-size: 40px;
+	padding-top: 65px;
+	padding-bottom: 25px;
+	color: black;
+}
+
+.social p{
+	font-size: 16px;
+	font-family: 'Titillium Web';
+	padding-bottom: 60px;
+}
+
+.social div{
+	text-align: center;
+	font-family: 'Teko-Light';
+	font-size: 30px;
+	overflow: hidden;
+	padding-bottom: 60px;
+}
+
+.social ul li{
+	float: left;
+	width: 200px;
+	height: 195px;
+	margin-right: 1.56%;
+	background-color: #30282a;
+	padding: 60px 0 60px 0;
+}
+
+.social a:visited {
+	color: white;
+}
+
+footer {
+	padding: 20px 19.5% 40px 19.5%;
+
+}
+
+/*when_screen*/
+
+@media screen and (max-width: 800px) {
+	
+article{
+width:50%;
+padding: 0.0.5%;
+}
+
+.desktop {
+	display: none;
+}
+
+.mobile-only {
+	display: block;
+}
+
+.slide h1 {
+	font-size: 70px;
+}
+
+.slide p{
+	font-size: 15px;
+}
+
+.button {
+	font-size: 13px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 10px 27px 10px 27px;
 }
